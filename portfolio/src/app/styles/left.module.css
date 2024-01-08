@@ -1,0 +1,68 @@
+.leftMainDiv h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: whitesmoke;
+}
+
+.leftMainDiv h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    color: whitesmoke;
+}
+
+.leftMainDiv p {
+    margin-top: 1rem;
+    color: gray;
+    line-height: 1.5;
+}
+
+.navBarItems {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navBarItems p{
+    color: whitesmoke;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding-left: 15px;
+    border-left: 2px solid white;
+    transition: border-left-color 0.3s;
+}
+
+.navBarItems p:hover {
+    border-left-color: whitesmoke;
+}
+
+.navBarItems a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.socialMedia {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.socialMedia li {
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.socialMediaItem {
+    color: whitesmoke;
+    font-size: 28px;
+}
