@@ -2,6 +2,7 @@
     max-width: 40%;
     margin-left: 40%;
 }
+
 .aboutDiv p {
     color: grey;
     line-height: 1.5rem;
@@ -10,29 +11,45 @@
 .ExperienceDiv {
     margin-top: 100px;
 }
+
 .date p {
     color: grey;
     font-size: .75rem;
     line-height: 1rem;
 }
+
 .summaryHeader h3 {
     margin-bottom: 0;
 }
+
 .summaryHeader p {
     margin-top: 5px;
 }
+
 .summary p {
     color: gray;
     width: 80%;
     font-size: .875rem;
 }
+
 .ExperienceDivItem {
     margin-top: 50px;
 }
+
 .ExperienceDivItem span {
     margin: 0 5px;
 }
+
 .ExperienceDivItem h3 {
     color: white;
 }
 
+.transparentCard {
+    border: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+  
+.transparentCard:hover {
+    background-color: transparent; /* Make the card transparent on hover */
+}

@@ -1,10 +1,14 @@
 import styles from "@/app/styles/right.module.css";
-import { Divider, Space, Tag } from "antd";
+import { Space, Tag, Card } from "antd";
 import { ExperienceListProps, ExperienceData } from "../utils/ExperienceTypes";
 
 const ExperienceList: React.FC<ExperienceListProps> = ({ experience }) => {
   const ExperienceListItems = experience.map((item, index) => (
-    <div key={index} className={styles.ExperienceDivItem}>
+    <Card
+      key={index}
+      className={`${styles.ExperienceDivItem} ${styles.transparentCard}`}
+      hoverable
+    >
       <div className={styles.date}>
         <p>
           {item.startYear} <span> - </span> {item.endYear}
@@ -21,10 +25,14 @@ const ExperienceList: React.FC<ExperienceListProps> = ({ experience }) => {
       <div>
         <Space>
           {item.skills &&
-            item.skills.map((skill, index) => <Tag key={index} color="green">{skill}</Tag>)}
+            item.skills.map((skill, index) => (
+              <Tag key={index} color="green">
+                {skill}
+              </Tag>
+            ))}
         </Space>
       </div>
-    </div>
+    </Card>
   ));
 
   return <div className={styles.ExperienceDiv}>{ExperienceListItems}</div>;
