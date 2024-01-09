@@ -5,7 +5,7 @@ import {
   LinkedinFilled,
   GithubFilled,
 } from "@ant-design/icons";
-import corbinImage from "@/app/images/corbin.jpeg";
+import corbinImage from "@/app/images/corbinImage.jpg";
 import Image from "next/image";
 
 const Left: React.FC = () => {
@@ -14,11 +14,14 @@ const Left: React.FC = () => {
       <h1>Corbin Lazarone</h1>
       <h2>Software Engineer | CS Student</h2>
       <Image
-        style={{ height: 300, width: 300 }}
+        style={{ height: 300, width: 250 }}
         src={corbinImage}
         alt="corbin-image"
       />
-      <p>I am a software engineer.</p>
+      <p>
+        I build software with a creative touch, solving problems one line of
+        code at a time.
+      </p>
       <div className={styles.navBarItems}>
         <p>
           <a href="#">About</a>

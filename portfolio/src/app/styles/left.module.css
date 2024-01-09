@@ -1,6 +1,6 @@
 .leftMainDiv {
     position: fixed;
-    margin-right: 50%;
+    margin-right: 40%;
 }
 .leftMainDiv h1 {
     font-size: 3rem;
@@ -21,6 +21,7 @@
     margin-top: 1rem;
     color: gray;
     line-height: 1.5;
+    width: 60%;
 }
 
 .navBarItems {

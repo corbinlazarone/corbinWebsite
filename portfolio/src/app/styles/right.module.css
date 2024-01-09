@@ -1,6 +1,6 @@
 .rightMainDiv {
     max-width: 40%;
-    margin-left: 50%;
+    margin-left: 40%;
 }
 .aboutDiv p {
     color: grey;
@@ -25,6 +25,9 @@
     color: gray;
     width: 80%;
     font-size: .875rem;
+}
+.ExperienceDivItem {
+    margin-top: 50px;
 }
 .ExperienceDivItem span {
     margin: 0 5px;
