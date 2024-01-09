@@ -1,5 +1,34 @@
 import styles from "@/app/styles/right.module.css";
 import { Divider, Space, Tag } from "antd";
+import { ExperienceListProps, ExperienceData } from "../utils/ExperienceTypes";
+
+const ExperienceList: React.FC<ExperienceListProps> = ({ experience }) => {
+  const ExperienceListItems = experience.map((item, index) => (
+    <div key={index} className={styles.ExperienceDivItem}>
+      <div className={styles.date}>
+        <p>
+          {item.startYear} <span> - </span> {item.endYear}
+        </p>
+      </div>
+      <div className={styles.summary}>
+        <div className={styles.summaryHeader}>
+          <h3>
+            {item.position} | {item.company}
+          </h3>
+        </div>
+        <p>{item.summary}</p>
+      </div>
+      <div>
+        <Space>
+          {item.skills &&
+            item.skills.map((skill, index) => <Tag key={index} color="green">{skill}</Tag>)}
+        </Space>
+      </div>
+    </div>
+  ));
+
+  return <div className={styles.ExperienceDiv}>{ExperienceListItems}</div>;
+};
 
 const Right: React.FC = () => {
   return (
@@ -24,38 +53,7 @@ const Right: React.FC = () => {
           Korok seeds K o r o k s e e d s .
         </p>
       </div>
-      <div className={styles.ExperienceDiv}>
-        <div className={styles.ExperienceDivItem}>
-          <div className={styles.date}>
-            <p>
-              2018<span> — </span>PRESENT
-            </p>
-          </div>
-          <div className={styles.summary}>
-            <div className={styles.summaryHeader}>
-                <h3>Lead Engineer | UpStatement</h3>
-                <p>Senior Engineer</p>
-            </div>
-            <p>
-              Deliver high-quality, robust production code for a diverse array
-              of projects for clients including Harvard Business School,
-              Everytown for Gun Safety, Pratt Institute, Koala Health,
-              Vanderbilt University, The 19th News, and more. Provide leadership
-              within engineering department through close collaboration,
-              knowledge shares, and mentorship.
-            </p>
-            <div>
-                <Space >
-                    <Tag color="green">PHP</Tag>
-                    <Tag color="green">PHP</Tag>
-                    <Tag color="green">PHP</Tag>
-                    <Tag color="green">PHP</Tag>
-                    <Tag color="green">PHP</Tag>
-                </Space>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ExperienceList experience={ExperienceData}/>
     </div>
   );
 };
