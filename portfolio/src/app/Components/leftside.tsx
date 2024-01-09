@@ -46,7 +46,7 @@ const Left: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/corbinlazarone/" target="_blank">
+            <a href="https://www.linkedin.com/in/corbin-lazarone-58647923b/" target="_blank">
               <LinkedinFilled className={styles.socialMediaItem} />
             </a>
           </li>
