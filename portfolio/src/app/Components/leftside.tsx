@@ -36,17 +36,17 @@ const Left: React.FC = () => {
       <div className={styles.footer}>
         <ul className={styles.socialMedia}>
           <li>
-            <a href="https://www.instagram.com/dsc_lsu/">
+            <a href="https://github.com/corbinlazarone" target="_blank">
               <GithubFilled className={styles.socialMediaItem} />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/dsc_lsu/">
+            <a href="https://www.instagram.com/corbinlazarone/" target="_blank">
               <InstagramFilled className={styles.socialMediaItem} />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/dsc-lsu/">
+            <a href="https://www.linkedin.com/company/corbinlazarone/" target="_blank">
               <LinkedinFilled className={styles.socialMediaItem} />
             </a>
           </li>
