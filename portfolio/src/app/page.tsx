@@ -1,3 +1,4 @@
+"use client"
 import Left from './Components/leftside'
 import Right from './Components/rightside'
 import styles from './page.module.css'

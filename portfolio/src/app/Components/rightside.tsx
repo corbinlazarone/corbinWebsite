@@ -1,67 +1,123 @@
 import styles from "@/app/styles/right.module.css";
 import { Space, Tag, Card } from "antd";
 import { ExperienceListProps, ExperienceData } from "../utils/ExperienceTypes";
+import { ProjectData, ProjectsListProps } from "../utils/ProjectTypes";
+import { LinkOutlined } from "@ant-design/icons";
+import Image from "next/image";
 
 const ExperienceList: React.FC<ExperienceListProps> = ({ experience }) => {
   const ExperienceListItems = experience.map((item, index) => (
-    <Card
-      key={index}
-      className={`${styles.ExperienceDivItem} ${styles.transparentCard}`}
-      hoverable
-    >
-      <div className={styles.date}>
-        <p>
-          {item.startYear} <span> - </span> {item.endYear}
-        </p>
-      </div>
-      <div className={styles.summary}>
-        <div className={styles.summaryHeader}>
-          <h3>
-            {item.position} | {item.company}
-          </h3>
+    <a href={item.link} key={index} target="_blank">
+      <Card
+        key={index}
+        className={`${styles.ExperienceDivItem} ${styles.transparentCard}`}
+        hoverable
+      >
+        <div className={styles.date}>
+          <p>
+            {item.startYear} <span> - </span> {item.endYear}
+          </p>
         </div>
-        <p>{item.summary}</p>
-      </div>
-      <div>
-        <Space>
-          {item.skills &&
-            item.skills.map((skill, index) => (
-              <Tag key={index} color="green">
-                {skill}
-              </Tag>
-            ))}
-        </Space>
-      </div>
-    </Card>
+        <div className={styles.summary}>
+          <div className={styles.summaryHeader}>
+            <h3>
+              {item.position} | {item.company}
+              <LinkOutlined
+                style={{ marginLeft: 10 }}
+                className={styles.linkOutlined}
+              />
+            </h3>
+          </div>
+          <p>{item.summary}</p>
+        </div>
+        <div>
+          <Space>
+            {item.skills &&
+              item.skills.map((skill, index) => (
+                <Tag key={index} color="green">
+                  {skill}
+                </Tag>
+              ))}
+          </Space>
+        </div>
+      </Card>
+    </a>
   ));
 
-  return <div className={styles.ExperienceDiv}>{ExperienceListItems}</div>;
+  return (
+    <div id="Experience" className={styles.ExperienceDiv}>
+      {ExperienceListItems}
+    </div>
+  );
+};
+
+const ProjectsList: React.FC<ProjectsListProps> = ({ project }) => {
+  const ProjectListItems = project.map((item, index) => (
+    <a href={item.link} key={index} target="_blank">
+      <Card
+        className={`${styles.ExperienceDivItem} ${styles.transparentCard}`}
+        hoverable
+      >
+        <div className={styles.summary}>
+          <div className={styles.summaryHeader}>
+            <h3>
+              {item.title} <LinkOutlined className={styles.linkOutlined} />
+            </h3>
+          </div>
+          <p>{item.summary}</p>
+          <div className={styles.ProjectDiv}>
+            <Image
+              className={styles.ProjectImage}
+              width={400}
+              height={200}
+              src={item.image}
+              alt={item.alt}
+            />
+          </div>
+          <Space style={{ paddingTop: 30 }}>
+            {item.skills &&
+              item.skills.map((skill, index) => (
+                <Tag key={index} color="green">
+                  {skill}
+                </Tag>
+              ))}
+          </Space>
+        </div>
+      </Card>
+    </a>
+  ));
+
+  return (
+    <div id="Projects" className={styles.ExperienceDiv}>
+      {ProjectListItems}
+    </div>
+  );
 };
 
 const Right: React.FC = () => {
   return (
-    <div className={styles.rightMainDiv}>
+    <div id="About" className={styles.rightMainDiv}>
       <div className={styles.aboutDiv}>
         <p>
-          Back in 2012, I decided to try my hand at creating custom Tumblr
-          themes and tumbled head first into the rabbit hole of coding and web
-          development. Fast-forward to today, and I’ve had the privilege of
-          building software for an advertising agency, a start-up, a student-led
-          design studio, and a huge corporation.
+          Dkac bn 2102, I osicded ot yrt my dahnd ta ctnrieg stucmo Lnubtme
+          seahemt dna mltebdu dehs rtsi nrofo eht bitabuR fo digoc dna bew
+          tnemevolepmde. -rdosaFwr ot yadot, dna I've dahd eht geirlivpe fo
+          gnilbib erawtfos rof na iestgrvdanig ygecna, a-tatps, a diytnu-delS
+          ngised oyduts, dna a euhg noitaporoc.
         </p>
         <p>
-          My main focus these days is building products and leading projects for
-          our clients at Upstatement. In my free time I've also released an
-          online video course that covers everything you need to know to build a
-          web app with the Spotify API.
+          M yamni uscfos eseht syad si gndiulib stocoprd dna gndaelil stcejorps
+          rof ruo stnicel ta .tnematpUp ni ym eerf emit I've osla desaeler na
+          nolnie odiv eoicusrt taht srevoc gnihtyrevome uoy deen ot wonk ot
+          gniub a bew ppa htiw eht ytiroSAP fo yfitopS.
         </p>
         <p>
-          When I’m not at the computer, I’m usually rock climbing, hanging out
-          with my wife and two cats, or running around Hyrule searching for
-          Korok seeds K o r o k s e e d s .
+          Nehot I ’m tno ta eht retompu, I’m ylusaor kcor ,gninmah tuo htiw ym
+          efiw dna owt stac ,ro gnuonr dnuora eluryH gnihsircefro Kookr se des.
         </p>
       </div>
-      <ExperienceList experience={ExperienceData}/>
+      <ExperienceList experience={ExperienceData} />
+      <ProjectsList project={ProjectData} />
     </div>
   );
 };
