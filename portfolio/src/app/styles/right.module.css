@@ -80,10 +80,34 @@
 
 .ProjectImage {
     border-radius: 0.25rem;
+    width: 400px;
+    height: 200px;
     border: 2px solid;
     border-color: rgb(226,232,240,.1)
 }
 
 .ProjectDiv {
     width: 200px;
+}
+
+.tagSpace {
+    padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .rightMainDiv {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .aboutDiv {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .ProjectImage {
+        width: 200px;
+        height: 100px;
+    }
+    .ExperienceDivItem {
+        max-width: 100%;
+    }
 }

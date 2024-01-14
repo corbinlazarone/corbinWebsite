@@ -39,4 +39,12 @@ export const ProjectData: Projects[] = [
         alt: "To Due website screenshot",
         skills: ["Next.js", "google-auth"]
     },
+    {
+        image: toDueImage,
+        title: "To Due",
+        summary: "A web app that reads course work syllabus and post the due dates of assignments to Google Calendar.",
+        link: "https://www.todue.net/",
+        alt: "To Due website screenshot",
+        skills: ["Next.js", "google-auth"]
+    },
 ]

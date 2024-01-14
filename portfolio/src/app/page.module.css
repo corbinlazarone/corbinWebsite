@@ -1,5 +1,12 @@
 .mainDiv {
   display: flex;
-  max-width: 90%;
+  max-width: 100%;
   justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+  }
 }

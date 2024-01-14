@@ -21,7 +21,7 @@ export const ExperienceData: Experience[] = [
     position: "Software Developer",
     summary:
       "Collaborated with a team of developers to build full-stack modules for linking and recording sensor data hosting on ignition.Designed and Implemented a redesigned full stack application of an ERP (Enterprise resource planning) software hosted on ignition. Increased load time of order and manufacture data as well as user productivity and engagement",
-    skills: ["Java", "Python", "React", "C#", "ASP.NET core", "SQL"],
+    skills: ["Java", "Python", "React", "C#", "ASP.NET core", "SQL", "jlfjsf", "jslkfj", "lsjf", "jlskf"],
   },
   {
     startYear: "2022",
@@ -31,7 +31,7 @@ export const ExperienceData: Experience[] = [
     position: "Software Developer",
     summary:
       "Collaborated with a team of developers to build full-stack modules for linking and recording sensor data hosting on ignition.Designed and Implemented a redesigned full stack application of an ERP (Enterprise resource planning) software hosted on ignition. Increased load time of order and manufacture data as well as user productivity and engagement",
-    skills: ["Java", "Python", "React", "C#", "ASP.NET core", "SQL"],
+    skills: ["Java", "Python", "React", "C#", "ASP.NET core", "SQL", "jlfjsf", "jslkfj", "lsjf", "jlskf"],
   },
   {
     startYear: "2022",
@@ -41,6 +41,16 @@ export const ExperienceData: Experience[] = [
     position: "Software Developer",
     summary:
       "Collaborated with a team of developers to build full-stack modules for linking and recording sensor data hosting on ignition.Designed and Implemented a redesigned full stack application of an ERP (Enterprise resource planning) software hosted on ignition. Increased load time of order and manufacture data as well as user productivity and engagement",
-    skills: ["Java", "Python", "React", "C#", "ASP.NET core", "SQL"],
+    skills: ["Java", "Python", "React", "C#", "ASP.NET core", "SQL", "jlfjsf", "jslkfj", "lsjf", "jlskf"],
+  },
+  {
+    startYear: "2022",
+    link: "https://bbpsales.com/",
+    endYear: "PRESENT",
+    company: "BBP Sales",
+    position: "Software Developer",
+    summary:
+      "Collaborated with a team of developers to build full-stack modules for linking and recording sensor data hosting on ignition.Designed and Implemented a redesigned full stack application of an ERP (Enterprise resource planning) software hosted on ignition. Increased load time of order and manufacture data as well as user productivity and engagement",
+    skills: ["Java", "Python", "React", "C#", "ASP.NET core", "SQL", "jlfjsf", "jslkfj", "lsjf", "jlskf"],
   },
 ];

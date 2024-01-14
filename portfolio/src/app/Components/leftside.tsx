@@ -45,8 +45,6 @@ const Left: React.FC = () => {
           className={styles.image}
           src={corbinImage}
           alt="corbin-image"
-          width={250}
-          height={300}
         />
         <div className={styles.border}></div>
       </div>
@@ -55,7 +53,7 @@ const Left: React.FC = () => {
         code at a time.
       </p>
       <div className={styles.navBarItems}>
-        <p>
+        <p style={{ width: 250 }}>
           <a href="#About">About</a>
         </p>
         <p>

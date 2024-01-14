@@ -85,20 +85,22 @@
 .imageContainer {
   position: relative;
   display: inline-block;
-  perspective: 1000px; /* Set perspective for 3D effect */
+  perspective: 1000px;
 }
 
 .image {
   display: block;
   max-width: 100%;
+  width: 250px;
+  height: 300px;
   height: auto;
-  border-radius: 10px; /* Add border radius to the image */
-  transform: rotateY(15deg); /* Rotate the image for 3D effect */
-  transition: transform 0.3s; /* Add smooth transition on transform property */
+  border-radius: 10px;
+  transform: rotateY(15deg);
+  transition: transform 0.3s; 
 }
 
 .imageContainer:hover .image {
-  transform: rotateY(15deg); /* Increase scale to make it pop out */
+  transform: rotateY(15deg);
 }
 
 .border {
@@ -107,8 +109,34 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border: 5px solid #b7eb8f; /* Adjust the border style and color as needed */
-  transform: translateZ(-1px); /* Move the border back in the 3D space */
-  border-radius: 10px; /* Add border radius to match the image */
-  z-index: -1; /* Behind the image */
+  border: 5px solid #b7eb8f;
+  transform: translateZ(-1px);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+    .leftMainDiv {
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 90%;
+        margin-right: 0;
+    }
+    .leftMainDiv p {
+        width: 100%;
+    }
+    .border {
+        width: 238px;
+    }
+    .navBarItems {
+        flex-direction: row;
+    }
+    .footer {
+        margin-top: 30px;
+        display: flex;
+    }
 }

@@ -4,6 +4,7 @@ import { ExperienceListProps, ExperienceData } from "../utils/ExperienceTypes";
 import { ProjectData, ProjectsListProps } from "../utils/ProjectTypes";
 import { LinkOutlined } from "@ant-design/icons";
 import Image from "next/image";
+import { SP } from "next/dist/shared/lib/utils";
 
 const ExperienceList: React.FC<ExperienceListProps> = ({ experience }) => {
   const ExperienceListItems = experience.map((item, index) => (
@@ -31,7 +32,7 @@ const ExperienceList: React.FC<ExperienceListProps> = ({ experience }) => {
           <p>{item.summary}</p>
         </div>
         <div>
-          <Space>
+          <Space size={[0, 4]} wrap className={styles.tagSpace}>
             {item.skills &&
               item.skills.map((skill, index) => (
                 <Tag key={index} color="green">
@@ -68,13 +69,11 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ project }) => {
           <div className={styles.ProjectDiv}>
             <Image
               className={styles.ProjectImage}
-              width={400}
-              height={200}
               src={item.image}
               alt={item.alt}
             />
           </div>
-          <Space style={{ paddingTop: 30 }}>
+          <Space size={[0, 4]} wrap className={styles.tagSpace}>
             {item.skills &&
               item.skills.map((skill, index) => (
                 <Tag key={index} color="green">
