@@ -5,6 +5,10 @@
     margin-left: 40%;
 }
 
+.aboutDiv {
+    max-width: 90%;
+}
+
 .aboutDiv p {
     color: grey;
     font-family: 'Roboto', sans-serif;
