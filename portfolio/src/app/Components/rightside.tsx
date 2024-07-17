@@ -4,7 +4,6 @@ import { ExperienceListProps, ExperienceData } from "../utils/ExperienceTypes";
 import { ProjectData, ProjectsListProps } from "../utils/ProjectTypes";
 import { LinkOutlined } from "@ant-design/icons";
 import Image from "next/image";
-import { SP } from "next/dist/shared/lib/utils";
 
 const ExperienceList: React.FC<ExperienceListProps> = ({ experience }) => {
   const ExperienceListItems = experience.map((item, index) => (

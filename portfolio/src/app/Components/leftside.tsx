@@ -6,7 +6,7 @@ import {
   LinkedinFilled,
   GithubFilled,
 } from "@ant-design/icons";
-import corbinImage from "@/app/images/corbinImage.jpg";
+import corbinImage from "@/app/images/corbin_Image.jpg";
 import Image from "next/image";
 
 const Left: React.FC = () => {
