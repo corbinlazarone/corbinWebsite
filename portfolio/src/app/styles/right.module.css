@@ -3,6 +3,9 @@
 .rightMainDiv {
     max-width: 40%;
     margin-left: 40%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .aboutDiv {
@@ -102,6 +105,8 @@
     .rightMainDiv {
         max-width: 100%;
         margin-left: 0;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
     .aboutDiv {
         max-width: 100%;
@@ -113,5 +118,8 @@
     }
     .ExperienceDivItem {
         max-width: 100%;
+    }
+    .ExperienceDiv {
+        margin-top: 0
     }
 }

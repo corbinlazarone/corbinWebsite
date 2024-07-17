@@ -57,7 +57,7 @@
 }
 
 .footer {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .socialMedia {
@@ -125,17 +125,56 @@
         max-width: 90%;
         margin-right: 0;
     }
+
+    .leftMainDiv h1 {
+        text-align: center;
+    }
+
+    .leftMainDiv h2 {
+        text-align: center;
+    }
+
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        position: relative; /* Ensure the border positions relative to this */
+        width: 100%; /* Set width to 100% to center the border */
+        max-width: 250px; /* Adjust to match the image width */
+        margin: 0 auto; /* Center the container */
+    }
+
+    .border {
+        position: absolute; /* Keep it absolute for centering */
+        top: -3px; /* Adjust to center the border */
+        left: -3px; /* Adjust to center the border */
+        right: -3px; /* Adjust to center the border */
+        bottom: -3px; /* Adjust to center the border */
+        border: 9px solid #b7eb8f;
+        border-radius: 10px;
+        z-index: -1;
+    }
+
+    .image {
+        max-width: 100%;
+        width: 100%; /* Set to 100% for responsiveness */
+        height: auto;
+        border-radius: 10px;
+        transform: rotateY(10deg);
+        transition: transform 0.3s; 
+    }
+
     .leftMainDiv p {
         width: 100%;
+        text-align: center;
     }
-    .border {
-        width: 238px;
-    }
+
     .navBarItems {
         flex-direction: row;
     }
+
     .footer {
         margin-top: 30px;
         display: flex;
+        justify-content: center;
     }
 }
