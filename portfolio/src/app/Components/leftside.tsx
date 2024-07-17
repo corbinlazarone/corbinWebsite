@@ -1,16 +1,17 @@
-"use client"
+"use client";
 import styles from "@/app/styles/left.module.css";
 import { useEffect } from "react";
 import {
   InstagramFilled,
   LinkedinFilled,
   GithubFilled,
+  XOutlined,
+  
 } from "@ant-design/icons";
 import corbinImage from "@/app/images/corbin_Image.jpg";
 import Image from "next/image";
 
 const Left: React.FC = () => {
-  
   useEffect(() => {
     // Smooth scrolling behavior
     const smoothScroll = (target: string) => {
@@ -41,11 +42,7 @@ const Left: React.FC = () => {
       <h1>Corbin Lazarone</h1>
       <h2>Software Engineer | CS Student</h2>
       <div className={styles.imageContainer}>
-        <Image
-          className={styles.image}
-          src={corbinImage}
-          alt="corbin-image"
-        />
+        <Image className={styles.image} src={corbinImage} alt="corbin-image" />
         <div className={styles.border}></div>
       </div>
       <p>
@@ -76,8 +73,19 @@ const Left: React.FC = () => {
             </a>
           </li>
           <li>
-          <a href="https://www.linkedin.com/in/corbin-lazarone-58647923b/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/corbin-lazarone-58647923b/"
+              target="_blank"
+            >
               <LinkedinFilled className={styles.socialMediaItem} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/corbinlaz"
+              target="_blank"
+            >
+             <XOutlined  className={styles.socialMediaItem} />
             </a>
           </li>
         </ul>

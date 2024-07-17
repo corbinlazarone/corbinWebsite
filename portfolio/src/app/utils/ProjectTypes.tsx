@@ -1,8 +1,8 @@
-import toDueImage from "@/app/images/todue-net-screenshot.png";
+import rdImage from "@/app/images/rd_screenshot.png";
 import { StaticImageData } from "next/image";
 
 export interface Projects {
-    image: StaticImageData;
+    image: StaticImageData
     title: string;
     summary: string;
     link: string;
@@ -16,35 +16,11 @@ export interface ProjectsListProps {
 
 export const ProjectData: Projects[] = [
     {
-        image: toDueImage,
-        title: "To Due",
-        summary: "A web app that reads course work syllabus and post the due dates of assignments to Google Calendar.",
-        link: "https://www.todue.net/",
-        alt: "To Due website screenshot",
-        skills: ["Next.js", "google-auth"]
-    },
-    {
-        image: toDueImage,
-        title: "To Due",
-        summary: "A web app that reads course work syllabus and post the due dates of assignments to Google Calendar.",
-        link: "https://www.todue.net/",
-        alt: "To Due website screenshot",
-        skills: ["Next.js", "google-auth"]
-    },
-    {
-        image: toDueImage,
-        title: "To Due",
-        summary: "A web app that reads course work syllabus and post the due dates of assignments to Google Calendar.",
-        link: "https://www.todue.net/",
-        alt: "To Due website screenshot",
-        skills: ["Next.js", "google-auth"]
-    },
-    {
-        image: toDueImage,
-        title: "To Due",
-        summary: "A web app that reads course work syllabus and post the due dates of assignments to Google Calendar.",
-        link: "https://www.todue.net/",
-        alt: "To Due website screenshot",
-        skills: ["Next.js", "google-auth"]
+        image: rdImage,
+        title: "Random Debate",
+        summary: "A website that puts random people in random group chats to discuss random topics.",
+        link: "https://www.randomdebate.com/",
+        alt: "rd screenshot",
+        skills: ["Next.js", "google-auth", "Firebase", "Java", "TypeScript", "Spring boot", "Firebase Cloud Store"]
     },
 ]

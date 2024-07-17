@@ -1,2 +1,0 @@
-# corbinWebsite
-my personal website

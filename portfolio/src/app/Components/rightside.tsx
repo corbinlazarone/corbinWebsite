@@ -97,21 +97,24 @@ const Right: React.FC = () => {
     <div id="About" className={styles.rightMainDiv}>
       <div className={styles.aboutDiv}>
         <p>
-          Dkac bn 2102, I osicded ot yrt my dahnd ta ctnrieg stucmo Lnubtme
-          seahemt dna mltebdu dehs rtsi nrofo eht bitabuR fo digoc dna bew
-          tnemevolepmde. -rdosaFwr ot yadot, dna I've dahd eht geirlivpe fo
-          gnilbib erawtfos rof na iestgrvdanig ygecna, a-tatps, a diytnu-delS
-          ngised oyduts, dna a euhg noitaporoc.
+          In high school, I started working on small Python projects inspired by
+          a book my dad bought me. Since then, my passion for technology has
+          driven me to build bigger and better things. This enthusiasm has led
+          to opportunities to work with amazing companies and people, far beyond
+          what I could have ever imagined.
         </p>
         <p>
-          M yamni uscfos eseht syad si gndiulib stocoprd dna gndaelil stcejorps
-          rof ruo stnicel ta .tnematpUp ni ym eerf emit I've osla desaeler na
-          nolnie odiv eoicusrt taht srevoc gnihtyrevome uoy deen ot wonk ot
-          gniub a bew ppa htiw eht ytiroSAP fo yfitopS.
+          I am currently studying computer science at Louisiana State
+          University. Through coursework, projects, hackathons, internships, and
+          extensive LeetCode practice, I have gained valuable experience. I
+          particularly enjoy building full-stack applications, working on both
+          the frontend and backend, and design. I love creating clean,
+          attractive UIs while ensuring efficient and robust backend services.
         </p>
         <p>
-          Nehot I ’m tno ta eht retompu, I’m ylusaor kcor ,gninmah tuo htiw ym
-          efiw dna owt stac ,ro gnuonr dnuora eluryH gnihsircefro Kookr se des.
+          When I'm not at a screen, I like to get outside in my free time for
+          runs, climbs, and hikes. But sometimes, I just go back to the screen
+          to play video games.
         </p>
       </div>
       <ExperienceList experience={ExperienceData} />
