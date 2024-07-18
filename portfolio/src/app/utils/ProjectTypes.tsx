@@ -18,7 +18,7 @@ export const ProjectData: Projects[] = [
     {
         image: rdImage,
         title: "Random Debate",
-        summary: "A website that puts random people in random group chats to discuss random topics.",
+        summary: "An open source website that puts random people in random group chats to discuss random topics.",
         link: "https://www.randomdebate.com/",
         alt: "rd screenshot",
         skills: ["Next.js", "google-auth", "Firebase", "Java", "TypeScript", "Spring boot", "Firebase Cloud Store"]
