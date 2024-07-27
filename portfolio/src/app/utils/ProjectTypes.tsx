@@ -1,4 +1,5 @@
 import rdImage from "@/app/images/rd_screenshot.png";
+import alienInvasionImage from "@/app/images/alien_invasion_screenshot.png";
 import { StaticImageData } from "next/image";
 
 export interface Projects {
@@ -23,4 +24,12 @@ export const ProjectData: Projects[] = [
         alt: "rd screenshot",
         skills: ["Next.js", "google-auth", "Firebase", "Java", "TypeScript", "Spring boot", "Firebase Cloud Store"]
     },
+    {
+        image: alienInvasionImage,
+        title: "Alien Invasion",
+        summary: "A replica to the classic arcade game Space Invaders.",
+        link: "https://github.com/corbinlazarone/Alien-Invasion ",
+        alt: "alien invasion screenshot",
+        skills: ["Python", "Pygame", "OOP"]
+    }
 ]
