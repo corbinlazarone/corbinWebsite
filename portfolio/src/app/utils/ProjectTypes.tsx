@@ -1,5 +1,5 @@
 import alienInvasionImage from "@/app/images/alien_invasion_screenshot.png";
-import IOSapp from "@/app/images/ios.png";
+import iosAppScreenshot from "@/app/images/ios.png";
 import { StaticImageData } from "next/image";
 
 export interface Projects {
@@ -17,7 +17,7 @@ export interface ProjectsListProps {
 
 export const ProjectData: Projects[] = [
     {
-        image: IOSapp,
+        image: iosAppScreenshot,
         title: "Personal Social Media Directory",
         summary: "IOS App that puts all of my most used apps in one place.",
         link: "https://github.com/corbinlazarone/corbinDirectory",
