@@ -65,9 +65,16 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ project }) => {
             </h3>
           </div>
           <p>{item.summary}</p>
-          <div className={styles.ProjectDiv}>
+          <div
+            className={styles.ProjectDiv}
+          >
             <Image
               className={styles.ProjectImage}
+              style={
+                item.title === "Personal Social Media Directory"
+                  ? { width: '200px', height: '420px' }
+                  : { width: '350px', height:  '200px' }
+              }
               src={item.image}
               alt={item.alt}
             />

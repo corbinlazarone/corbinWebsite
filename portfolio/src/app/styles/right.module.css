@@ -87,8 +87,6 @@
 
 .ProjectImage {
     border-radius: 0.25rem;
-    width: 350px;
-    height: 200px;
     border: 2px solid;
     border-color: rgb(226,232,240,.1)
 }

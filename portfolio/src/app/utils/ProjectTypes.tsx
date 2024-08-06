@@ -1,9 +1,9 @@
-import rdImage from "@/app/images/rd_screenshot.png";
 import alienInvasionImage from "@/app/images/alien_invasion_screenshot.png";
+import IOSapp from "@/app/images/IOS.png";
 import { StaticImageData } from "next/image";
 
 export interface Projects {
-    image: StaticImageData
+    image: StaticImageData;
     title: string;
     summary: string;
     link: string;
@@ -17,12 +17,12 @@ export interface ProjectsListProps {
 
 export const ProjectData: Projects[] = [
     {
-        image: rdImage,
-        title: "Random Debate",
-        summary: "An open source website that puts random people in random group chats to discuss random topics.",
-        link: "https://www.randomdebate.com/",
-        alt: "rd screenshot",
-        skills: ["Next.js", "google-auth", "Firebase", "Java", "TypeScript", "Spring boot", "Firebase Cloud Store"]
+        image: IOSapp,
+        title: "Personal Social Media Directory",
+        summary: "IOS App that puts all of my most used apps in one place.",
+        link: "https://github.com/corbinlazarone/corbinDirectory",
+        alt: "corbin_screenshot",
+        skills: ["Swift", "Xcode", "UIKit"]
     },
     {
         image: alienInvasionImage,
@@ -31,5 +31,5 @@ export const ProjectData: Projects[] = [
         link: "https://github.com/corbinlazarone/Alien-Invasion ",
         alt: "alien invasion screenshot",
         skills: ["Python", "Pygame", "OOP"]
-    }
+    },
 ]
