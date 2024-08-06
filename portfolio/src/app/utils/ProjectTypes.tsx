@@ -1,5 +1,5 @@
 import alienInvasionImage from "@/app/images/alien_invasion_screenshot.png";
-import IOSapp from "@/app/images/IOS.png";
+import IOSapp from "@/app/images/ios.png";
 import { StaticImageData } from "next/image";
 
 export interface Projects {
