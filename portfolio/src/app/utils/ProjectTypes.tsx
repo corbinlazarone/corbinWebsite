@@ -1,5 +1,6 @@
 import alienInvasionImage from "@/app/images/alien_invasion_screenshot.png";
 import iosAppScreenshot from "@/app/images/ios.png";
+import myfriends from "@/app/images/myfriends.png";
 import { StaticImageData } from "next/image";
 
 export interface Projects {
@@ -16,6 +17,14 @@ export interface ProjectsListProps {
 }
 
 export const ProjectData: Projects[] = [
+    {
+        image: myfriends,
+        title: "MyFriendsAPI",
+        summary: "A fullstack web application that displays my friends and their pictures from a PosgresSQL database.",
+        link: "",
+        alt: "myfriends_screenshot",
+        skills: ["Java", "Spring Boot", "PosgresSQL", "Docker", "Render", "Vercel", "Next.js"]
+    },
     {
         image: iosAppScreenshot,
         title: "Personal Social Media Directory",
