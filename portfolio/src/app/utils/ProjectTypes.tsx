@@ -21,7 +21,7 @@ export const ProjectData: Projects[] = [
         image: myfriends,
         title: "MyFriendsAPI",
         summary: "A fullstack web application that displays my friends and their pictures from a PosgresSQL database.",
-        link: "",
+        link: "https://my-friends-kappa.vercel.app/",
         alt: "myfriends_screenshot",
         skills: ["Java", "Spring Boot", "PosgresSQL", "Docker", "Render", "Vercel", "Next.js"]
     },
