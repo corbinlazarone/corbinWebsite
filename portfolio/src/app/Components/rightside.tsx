@@ -111,8 +111,7 @@ const Right: React.FC = () => {
           what I could have ever imagined.
         </p>
         <p>
-          I am currently studying computer science at Louisiana State
-          University. Through coursework, projects, hackathons, internships, and
+          Through projects, hackathons, internships, and
           extensive LeetCode practice, I have gained valuable experience. I
           particularly enjoy building full-stack applications, working on both
           the frontend and backend, and design. I love creating clean,

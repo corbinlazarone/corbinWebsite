@@ -40,7 +40,7 @@ const Left: React.FC = () => {
   return (
     <div className={styles.leftMainDiv}>
       <h1>Corbin Lazarone</h1>
-      <h2>Software Engineer | CS Student</h2>
+      <h2>Software Engineer</h2>
       <div className={styles.imageContainer}>
         <Image className={styles.image} src={corbinImage} alt="corbin-image" />
         <div className={styles.border}></div>
